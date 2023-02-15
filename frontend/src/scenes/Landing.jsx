@@ -58,7 +58,7 @@ const Landing = ({ setSelectedPage }) => {
             {/* if we want to see an image to a pseudo element we have to use something like content-brush (have to add it in css in tailwind.config) */}
             Christopher {""}
             <span
-              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
+              className="xs:relative xs:text-deep-blue xs:font-semibold xs:before:content-brush
               before:absolute before:-left-[30px] before:-top-[70px] before:z-[-1]"
             >
               Luu
@@ -75,7 +75,7 @@ const Landing = ({ setSelectedPage }) => {
 
         {/* CALL TO ACTIONS */}
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          className="flex mt-5 justify-center md:justify-start "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -87,18 +87,18 @@ const Landing = ({ setSelectedPage }) => {
         >
           <AnchorLink
             className="rounded-l-lg bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
-              hover:bg-blue hover:text-white transition duration-500"
+              hover:bg-blue hover:text-white transition duration-300 shadow-md shadow-black z-10"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
             Contact Me
           </AnchorLink>
           <AnchorLink
-            className="rounded-r-lg bg-gradient-rainblue py-0.5 pr-0.5"
+            className="rounded-r-lg bg-gradient-rainblue py-0.5 pr-0.5 shadow-md shadow-black"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            <div className="bg-deep-blue rounded-r-lg hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
+            <div className="bg-deep-blue rounded-r-lg hover:text-red transition duration-00 w-full h-full flex items-center justify-center px-10 font-playfair">
               Let's talk.
             </div>
           </AnchorLink>

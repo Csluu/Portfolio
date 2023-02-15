@@ -20,7 +20,7 @@ const Link = ({
         !isDesktop && isMenuToggled
           ? "w-3/4 flex justify-center py-4 m-4 "
           : "flex px-4 py-1.5"
-      } hover:text-important-text-white transition duration-700 hover:bg-hover-text`}
+      } hover:text-important-text-white transition duration-300 hover:scale-110 hover:bg-hover-text hover:ease-in-out`}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
@@ -33,8 +33,8 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
   const navbarBackground = isTopOfPage
-    ? "bg-black"
-    : "backdrop-blur-2xl bg-opaque-black ";
+    ? "bg-black shadow-sm shadow-black"
+    : "backdrop-blur-2xl bg-opaque-black shadow-sm shadow-black";
 
   return (
     <nav

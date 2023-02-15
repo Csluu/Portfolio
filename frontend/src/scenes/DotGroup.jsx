@@ -12,9 +12,10 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
       <div className="flex justify-center place-items-center w-4 h-4 rounded-full bg-">
         <AnchorLink
           href="#home"
+          //
           className={`${
             selectedPage === "home" ? selectedStyles : "bg-dark-grey w-3 h-3"
-          } hover:h-4 hover:w-4 hover:ease-in-out duration-150 rounded-full shadow-lg shadow-black `}
+          } hover:scale-125 hover:h-4 hover:w-4 hover:ease-in-out hover:bg-gradient-rainblue hover:saturate-200 hover:brightness-110 hover:shadow-cyan-900 duration-150 rounded-full shadow shadow-black `}
           onClick={() => setSelectedPage("home")}
         />
       </div>
@@ -23,7 +24,7 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
           href="#about"
           className={`${
             selectedPage === "about" ? selectedStyles : "bg-dark-grey w-3 h-3"
-          } hover:h-4 hover:w-4 hover:ease-in-out duration-150 rounded-full shadow-lg shadow-black `}
+          } hover:h-4 hover:w-4 hover:ease-in-out hover:bg-gradient-rainblue hover:saturate-200 hover:brightness-110 hover:shadow-cyan-900 duration-150 rounded-full shadow shadow-black `}
           onClick={() => setSelectedPage("about")}
         />
       </div>
@@ -32,7 +33,7 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
           href="#skills"
           className={`${
             selectedPage === "skills" ? selectedStyles : "bg-dark-grey w-3 h-3"
-          } hover:h-4 hover:w-4 hover:ease-in-out duration-150 rounded-full shadow-lg shadow-black `}
+          } hover:h-4 hover:w-4 hover:ease-in-out hover:bg-gradient-rainblue hover:saturate-200 hover:brightness-110 hover:shadow-cyan-900 duration-150 rounded-full shadow shadow-black `}
           onClick={() => setSelectedPage("skills")}
         />
       </div>
@@ -43,7 +44,7 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
             selectedPage === "projects"
               ? selectedStyles
               : "bg-dark-grey w-3 h-3"
-          } hover:h-4 hover:w-4 hover:ease-in-out duration-150 rounded-full shadow-lg shadow-black `}
+          } hover:h-4 hover:w-4 hover:ease-in-out hover:bg-gradient-rainblue hover:saturate-200 hover:brightness-110 hover:shadow-cyan-900 duration-150 rounded-full shadow shadow-black `}
           onClick={() => setSelectedPage("projects")}
         />
       </div>
@@ -52,7 +53,7 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
           href="#resume"
           className={`${
             selectedPage === "resume" ? selectedStyles : "bg-dark-grey w-3 h-3"
-          } hover:h-4 hover:w-4 hover:ease-in-out duration-150 rounded-full shadow-lg shadow-black `}
+          } hover:h-4 hover:w-4 hover:ease-in-out hover:bg-gradient-rainblue hover:saturate-200 hover:brightness-110 hover:shadow-cyan-900 duration-150 rounded-full shadow shadow-black `}
           onClick={() => setSelectedPage("resume")}
         />
       </div>
@@ -61,7 +62,7 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
           href="#contact"
           className={`${
             selectedPage === "contact" ? selectedStyles : "bg-dark-grey w-3 h-3"
-          } hover:h-4 hover:w-4 hover:ease-in-out duration-150 rounded-full shadow-lg shadow-black `}
+          } hover:h-4 hover:w-4 hover:ease-in-out hover:bg-gradient-rainblue hover:saturate-200 hover:brightness-110 hover:shadow-cyan-900 duration-150 rounded-full shadow shadow-black `}
           onClick={() => setSelectedPage("contact")}
         />
       </div>
